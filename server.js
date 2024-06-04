@@ -15,7 +15,7 @@ const db = knex({
     port: 5432,
     user: "mitchell",
     password: process.env.DATABASE_PASSWORD,
-    database: "react_face_recognition_db",
+    database: process.env.DATABASE_NAME,
   },
 });
 
